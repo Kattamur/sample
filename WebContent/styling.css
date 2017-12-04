@@ -1,0 +1,31 @@
+@CHARSET "ISO-8859-1";
+h1
+{
+text-align:center;
+color:#F5F5F5;
+background-color:#FF4040;
+font-size:53px;
+}
+td
+{
+padding-top:.5em;
+padding-bottom:.7em;
+
+}
+#teja
+{
+		
+	background-color:#7AC5CD;
+}
+p
+{
+	border-bottom:5px;
+	
+}
+#divs
+{
+	padding-bottom: 20em;
+	
+	
+}
+

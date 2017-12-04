@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>welcome</title>
+
+<link rel="stylesheet" href="styling.css">
+<script  src="Validating.js"></script>
+</head>
+	<body>
+		<br>
+		<br>
+		<div id="teja">
+			<h1>MONTHLY POCKET MONEY</h1>
+
+
+			<form name="myform" action="Front" method="POST">
+
+				<table align="center">
+					<tr>
+						<td><b>FIRST NAME:</b></td>
+						<td><input type="text" name="fname" placeholder="SURNAME" required="required"/></td>
+							
+					</tr>
+					<tr>
+						<td><b>LAST NAME:</b></td>
+						<td><input type="text" name="lname" placeholder="LASTNAME" required="required"/></td>
+					</tr>
+					<tr>
+						<td><b>GENDER:</b></td>
+						<td><div>
+								<input type="radio" name="gender" value="male" checked><b>MALE</b><input
+									type="radio" name="gender" value="female"><b>FEMALE</b>
+							</div></td>
+					</tr>
+					<tr>
+						<td><b>E-MAIL ID:</b></td>
+						<td><input type="text" name="email"
+							placeholder="CONTACT EMAIL" required="required"/></td>
+					</tr>
+					<tr>
+						<td><b>PASSWORD:</b></td>
+						<td><input type="password" name="pass" placeholder="PASSWORD" required="required" /></td>
+					</tr>
+					<tr>
+						<td><b>CONFIRM PASSWORD:</b></td>
+						<td><input type="password" name="cpass"
+							placeholder="RETYPE PASSWORD" required="required" /></td>
+					</tr>
+
+					<tr>
+						<td><b>LOCATION:</b></td>
+						<td><input type="text" name="location" placeholder="LOCATION" required="required" /></td>
+					
+					</tr>
+					<tr>
+						<td><b>MOBILE NUMBER:</b></td>
+						<td><input type="number" name="mobile"
+							placeholder="PHONENUMBER" required="required" /></td>
+					</tr>
+					<tr>
+						<td><b>MONTHLY POCKET MONEY:</b></td>
+						<td><select name="curr">
+								<option>select</option>
+								<option>INR</option>
+								<option>USD</option>
+								<option>AUD</option>
+						</select> <b> AMOUNT </b><input type="number" name="amount"
+							placeholder="AMOUNT" required="required" /></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td><input type="submit" onclick="return validation()"
+							value="REGISTER" />
+					</tr>
+	
+		</table>
+
+		</form>
+		</div>
+	</body>
+</html>
