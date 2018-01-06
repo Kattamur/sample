@@ -5,6 +5,15 @@
 
 <link rel="stylesheet" href="styling.css">
 <script  src="Validating.js"></script>
+<style>
+a
+{
+text-decoration:none;
+}
+
+
+</style>
+
 </head>
 	<body>
 		<br>
@@ -13,17 +22,19 @@
 			<h1>MONTHLY POCKET MONEY</h1>
 
 
-			<form name="myform" action="Front" method="POST">
+			<form name="myform" action="Registrationss" method="POST">
 
 				<table align="center">
+		  
 					<tr>
 						<td><b>FIRST NAME:</b></td>
-						<td><input type="text" name="fname" placeholder="SURNAME" required="required"/></td>
+						<td><input type="text" name="fname" placeholder="Your Name" required="required"/></td>
 							
 					</tr>
+				
 					<tr>
 						<td><b>LAST NAME:</b></td>
-						<td><input type="text" name="lname" placeholder="LASTNAME" required="required"/></td>
+						<td><input type="text" name="lname" placeholder="Family Name" required="required"/></td>
 					</tr>
 					<tr>
 						<td><b>GENDER:</b></td>
@@ -55,8 +66,10 @@
 					<tr>
 						<td><b>MOBILE NUMBER:</b></td>
 						<td><input type="number" name="mobile"
-							placeholder="PHONENUMBER" required="required" /></td>
+							placeholder="PHONENUMBER" required="required" />
+							</td>
 					</tr>
+				
 					<tr>
 						<td><b>MONTHLY POCKET MONEY:</b></td>
 						<td><select name="curr">
@@ -70,8 +83,13 @@
 					<tr>
 						<td></td>
 						<td><input type="submit" onclick="return validation()"
-							value="REGISTER" />
+							value="REGISTER" ><a href="adminlogin.html">
+							
+							 <input type="button" value="SIGN IN"></a></td>
 					</tr>
+					
+					
+				
 	
 		</table>
 

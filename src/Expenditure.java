@@ -8,7 +8,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import jdbcconnection.Expenditures;
-
 /**
  * Servlet implementation class Expenditure
  */
@@ -30,7 +29,6 @@ public class Expenditure extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		doGet(request, response);
-		doGet(request, response);
 		String item=request.getParameter("item");
 		String desc=request.getParameter("descr");
 		String Amounts=request.getParameter("amnt");
@@ -38,7 +36,7 @@ public class Expenditure extends HttpServlet {
 		
 		new Expenditures().expenditure(item,desc,amount);
 		response.setContentType("text/html");
-		response.sendRedirect("Expenditures1.html");
+		response.sendRedirect("Expenditures.html");
 	}
 
 }

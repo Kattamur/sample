@@ -10,10 +10,10 @@ import javax.servlet.http.HttpServletResponse;
 import jdbcconnection.Insertion;
 
 /**
- * Servlet implementation class Front
+ * Servlet implementation class Registrationss
  */
-@WebServlet("/Front")
-public class Front extends HttpServlet {
+@WebServlet("/Registrationss")
+public class Registrationss extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
 	/**
@@ -34,26 +34,24 @@ public class Front extends HttpServlet {
 		String Lastname=request.getParameter("lname");
 		
 		String Gender=request.getParameter("gender");
-		System.out.println(Gender);
+	
 		
 		
 		String email=request.getParameter("email");
 		String Password=request.getParameter("pass");
 		String Location=request.getParameter("location");
 		String Number=request.getParameter("mobile");
-		int num=Integer.parseInt(Number);
+	
 		String currency=request.getParameter("curr");
 		String Amount=request.getParameter("amount");
 		int amount=Integer.parseInt(Amount);
+	
 		
 		
 		
 		
-		
-		
-		new Insertion().insert(Firstname,Lastname,Gender,email,Password,Location,num,amount,currency);
+		new Insertion().insert(Firstname,Lastname,Gender,email,Password,Location,Number,amount,currency);
 		response.setContentType("text/html");
-		
 		
 	}
 

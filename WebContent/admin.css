@@ -1,0 +1,29 @@
+@CHARSET "ISO-8859-1";
+.container
+{
+	position:relative;
+	text-align:center;
+	color:white;
+}
+.centered
+{
+position:absolute;
+top:70%;
+left:45%;
+transform: translate(-50%, -50%);
+
+}
+a
+{
+text-decoration:none;
+}
+.bottom
+{
+	
+	position:absolute;
+	top:40%;
+	left:40%;
+	
+}
+
+

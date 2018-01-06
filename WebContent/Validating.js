@@ -12,6 +12,6 @@ function validation() {
 		alert("Password must be minimum six characters");
 		flag = false;
 	}
-
 	return flag;
 }
+

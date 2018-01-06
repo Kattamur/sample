@@ -10,7 +10,7 @@ public class Expenditures {
 		try
 		{
 			connection=new Databaseconnection().getconnect();
-			java.sql.PreparedStatement psmt=connection.prepareStatement("Insert into expenditures(Name_of_Item,Description,Amount) values(?,?,?) ;");
+			java.sql.PreparedStatement psmt=connection.prepareStatement("Insert into december(Name_of_Item,Description,amount) values(?,?,?) ;");
 			
 			psmt.setString(1,item );
 			psmt.setString(2, desc);
